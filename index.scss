@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: Poppins;
+}
+
+
+body{
+
+    line-height: 1;
+
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 2fr 0fr;
+    grid-template-areas: "right right"
+                          "left left"
+                          "footer footer";
+                        
+}
+.left {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #71c9f8;
+    grid-area: left;
+}
+
+.right {
+    
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: right;
+    background-color: #fff;
+    .title{
+        font-size: 3rem;
+        line-height: 1.4;
+        font-weight: 600;
+        max-width: 500px;
+    }
+
+.title-container {
+
+   
+    width: 100%;
+    max-width: 500px;
+}
+    .join {
+        font-weight:600;
+        font-size: 1.5rem;
+    }
+}
+
+.footer {
+   
+    
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    grid-area: footer;
+    background-color: rgb(255, 27, 27);
+}
+
+.logo {
+    width: 100%;
+    max-width: 500px;
+    padding-bottom: 1.9rem;
+    img {
+       
+        height: 70px;
+    }
+    
+}
+
+.join-container {
+    padding-top: 6.2rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.button-container{
+    padding-top: 20px;
+    padding-bottom: 35px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+
+    button{
+
+        
+        font-size: 1.9rem;
+        font-weight: 600;
+        height: 45px;
+        border-radius: 30px
+    }
+}
+
+.blue {
+    background-color: #1da1f2;
+    color: #fff;
+}
+
+.white {
+    background-color: #fff;
+    border: solid 2px #1da1f2;
+    color: #1da1f2;
+}
+ @media screen and (min-width:1000px) {
+    main {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  1fr 0fr;
+        grid-template-areas: "left right"
+                              "footer footer";
+                            
+    }
+    .right{
+        align-items: center;
+        justify-content: center;
+    }
+ }
