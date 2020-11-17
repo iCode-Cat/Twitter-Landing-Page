@@ -8,7 +8,7 @@
 
 html {
   font-size: 10px;
-  font-family: Poppins;
+  font-family: sans-serif;
 }
 
 body {
@@ -45,9 +45,11 @@ main {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: left;
+  gap: 50px;
 }
 
 .right {
+  width: 100%;
   padding: 0 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,12 +72,13 @@ main {
   font-size: 3rem;
   line-height: 1.4;
   font-weight: 600;
-  max-width: 500px;
+  max-width: 380px;
+  width: 100%;
 }
 
 .right .title-container {
   width: 100%;
-  max-width: 500px;
+  max-width: 380px;
 }
 
 .right .join {
@@ -104,7 +107,7 @@ main {
 
 .logo {
   width: 100%;
-  max-width: 500px;
+  max-width: 380px;
   padding-bottom: 1.9rem;
 }
 
@@ -113,14 +116,16 @@ main {
 }
 
 .join-container {
-  padding-top: 6.2rem;
+  padding-top: 4.8rem;
   width: 100%;
-  max-width: 500px;
+  max-width: 380px;
 }
 
 .button-container {
+  width: 100%;
+  max-width: 380px;
   padding-top: 20px;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -131,15 +136,15 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 20px;
-  width: 100%;
-  max-width: 500px;
+  gap: 12px;
 }
 
 .button-container button {
-  font-size: 1.9rem;
+  width: 100%;
+  max-width: 380px;
+  font-size: 1.5rem;
   font-weight: 600;
-  height: 45px;
+  height: 40px;
   border-radius: 30px;
 }
 
@@ -154,7 +159,7 @@ main {
   color: #1da1f2;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 799px) {
   main {
     height: 100vh;
     display: -ms-grid;
